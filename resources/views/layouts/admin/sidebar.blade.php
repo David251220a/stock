@@ -12,7 +12,8 @@
         </li>
 
         <li class="menu">
-            <a href="{{ route('persona.index') }}" {{(substr(Route::currentRouteName() , 0 , strpos(Route::currentRouteName(), '.')) == 'persona' ? 'data-active=true' : '')}}
+            {{-- <a href="{{ route('persona.index') }}" {{(substr(Route::currentRouteName() , 0 , strpos(Route::currentRouteName(), '.')) == 'persona' ? 'data-active=true' : '')}} --}}
+            <a href="#"
                 aria-expanded="false" class="dropdown-toggle">
                 <div class="">
                     <i class="fa-solid fa-user-group mr-3"></i>
@@ -23,7 +24,7 @@
         </li>
 
         <li class="menu">
-            <a href="{{ route('solicitud.index') }}" {{(substr(Route::currentRouteName() , 0 , strpos(Route::currentRouteName(), '.')) == 'solicitud' ? 'data-active=true' : '')}}
+            <a href="#"
                 aria-expanded="false" class="dropdown-toggle">
                 <div class="">
                     <i class="fa-solid fa-hand-holding-dollar mr-3"></i>

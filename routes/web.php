@@ -29,7 +29,5 @@ Route::group([
     'middleware' => 'auth',
 ], function(){
     Route::get('/home', [InicioController::class, 'index'])->name('home');
-    Route::resource('/personas', PersonaController::class)->names('persona');
-    Route::resource('/solicitud', SolicitudController::class)->names('solicitud');
 });
 
