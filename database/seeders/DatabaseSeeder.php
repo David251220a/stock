@@ -23,11 +23,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             Usuario::class,
-            // Estado::class,
-            // Ciudad::class,
-            // NacionalidadSeeder::class,
-            // TipoPrestamoSeeder::class,
-            // SolicitudEstadoSeeder::class,
+            EstadoSeeder::class,
         ]);
     }
 }

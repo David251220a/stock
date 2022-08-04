@@ -2,8 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\InicioController;
-use App\Http\Controllers\PersonaController;
-use App\Http\Controllers\SolicitudController;
+use App\Http\Controllers\PaisController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -29,5 +28,6 @@ Route::group([
     'middleware' => 'auth',
 ], function(){
     Route::get('/home', [InicioController::class, 'index'])->name('home');
+    Route::get('/pais', [PaisController::class, 'index'])->name('secundaria.pais.index');
 });
 
