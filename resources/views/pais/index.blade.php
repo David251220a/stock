@@ -5,29 +5,19 @@
     <link href="{{asset('plugins/sweetalerts/sweetalert2.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('plugins/sweetalerts/sweetalert.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/css/components/custom-sweetalert.css')}}" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="{{asset('plugins/table/datatable/datatables.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/forms/theme-checkbox-radio.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('plugins/table/datatable/dt-global_style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('plugins/table/datatable/custom_dt_custom.css')}}">
     <link href="{{asset('assets/css/components/custom-modal.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('plugins/animate/animate.css')}}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="{{asset('plugins/select2/select2.min.css')}}">
-
+    <link href="{{asset('assets/css/elements/search.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/css/tables/table-basic.css')}}" rel="stylesheet" type="text/css" />
 @endsection
 
 @section('content')
 
-    {{-- <div class="mt-4 seperator-header">
-        <h4 class="fw-bold" style="font-weight: bold">Pais</h4>
-    </div> --}}
-    {{-- @livewire('pais.pais-create') --}}
+    @livewire('pais.pais-index')
 
-
-    {{-- <div class="row layout-spacing">
-        <div class="col-lg-12"> --}}
-            @livewire('pais.pais-index')
-        {{-- </div>
-    </div> --}}
 @endsection
 
 @section('js')

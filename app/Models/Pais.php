@@ -12,4 +12,8 @@ class Pais extends Model
     protected $table="sis_pais";
 
     protected $guarded = [];
+
+    public function estado(){
+        return $this->belongsTo(Estado::class, 'estado_id');
+    }
 }
