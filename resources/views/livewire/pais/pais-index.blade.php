@@ -1,7 +1,5 @@
 <div>
-    <div class="mt-4 seperator-header">
-        <h4 class="fw-bold" style="font-weight: bold">{{$titulo}}</h4>
-    </div>
+    @include('ui.titulo')
 
     <div class="row layout-spacing">
         <div class="col-lg-12">
