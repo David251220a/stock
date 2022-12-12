@@ -58,6 +58,20 @@
                                 <tr>
                                     <td style="text-align: center">OBSERVACIÓN:</td>
                                 </tr>
+                                <tr>
+                                    <td style="text-align: center">
+                                        <b>
+                                            @if ($data->consulta->count() == 1)
+                                                Primera consulta realiza para esta persona!
+                                            @else
+                                                La cantidad de busqueda de esta persona es {{$data->consulta->count()}} <br> fue consultada por el usuario
+                                                {{$data->consulta[1]->usuario->name}} <br>
+                                                en fecha y hora: {{date('d/m/Y H:i', strtotime($data->consulta[1]->created_at))}}
+                                            @endif
+
+                                        </b>
+                                    </td>
+                                </tr>
                         </tbody>
                     </table>
 

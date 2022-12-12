@@ -11,5 +11,9 @@ class Padron extends Model
 
     protected $table = 'padron';
 
+    public function consulta(){
+        return $this->hasMany(PadronConsulta::class, 'padron_id', 'CodPadron')->orderBy('id', 'DESC');
+    }
+
 
 }
