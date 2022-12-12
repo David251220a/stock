@@ -3,12 +3,12 @@
 
         <ul class="navbar-item theme-brand flex-row  text-center">
             <li class="nav-item theme-logo">
-                <a href="index.html">
+                <a href="#">
                     <img src="{{asset('assets/img/logo.svg')}}" class="navbar-logo" alt="logo">
                 </a>
             </li>
             <li class="nav-item theme-text">
-                <a href="index.html" class="nav-link"> Pres </a>
+                <a href="index.html" class="nav-link"> ANR </a>
             </li>
         </ul>
 
